@@ -9,8 +9,8 @@ class Pokemon
     @name = name
     @type = type
     @db = db
-    self.save(name, type, db)
-    @@all << self 
+    #self.save(name, type, db)
+    @@all << self
   end
 
   def self.save(name, type, db)
