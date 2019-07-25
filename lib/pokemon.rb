@@ -20,7 +20,11 @@ class Pokemon
   def self.find(id, db)
   find_pokemon = db.execute("SELECT *
   FROM pokemon
-  WHERE id = ?
-  LIMIT 1")
+  WHERE id = ?,
+  id").flatten
+
+  id = pokemon[0}
+  name = pokemon[1]
+  type = pokemon[2]
   end
 end
