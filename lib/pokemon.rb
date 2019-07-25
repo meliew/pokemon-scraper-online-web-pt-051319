@@ -10,7 +10,7 @@ class Pokemon
     @type = type
     @db = db
     #self.save(name, type, db)
-    @@all << self
+    #@@all << self
   end
 
   def self.save(name, type, db)
@@ -27,6 +27,7 @@ class Pokemon
   new_p.id = pokemon[0][0]
   new_p.name = pokemon[0][1]
   new_p.type = pokemon[0][2]
+
   new_p
   end
 end
