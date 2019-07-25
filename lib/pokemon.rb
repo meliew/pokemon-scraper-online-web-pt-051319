@@ -21,7 +21,7 @@ class Pokemon
   pokemon = db.execute("SELECT *
   FROM pokemon
   WHERE id = ?",
-  [id_num])
+  [id_num]).flatten
 
   new_p = self.new
   new_p.id = pokemon[0][0]
