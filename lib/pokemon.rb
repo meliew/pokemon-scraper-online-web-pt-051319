@@ -23,7 +23,7 @@ class Pokemon
   WHERE id = ?",
   [id_num])
 
-  new_p = self.new(id, name, type, db)
+  new_p = self.new(pokemon)
   new_p.id = pokemon[0][0]
   new_p.name = pokemon[0][1]
   new_p.type = pokemon[0][2]
