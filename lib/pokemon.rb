@@ -23,7 +23,7 @@ class Pokemon
   WHERE id = ?,
   id").flatten
 
-  id = pokemon[0}
+  id = pokemon[0]
   name = pokemon[1]
   type = pokemon[2]
   end
